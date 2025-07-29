@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "771966487351",
+    "project_id": "dompetku-c8cb2",
+    "storage_bucket": "dompetku-c8cb2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771966487351:android:f03c5bf3a42a5710c0a8b2",
+        "android_client_info": {
+          "package_name": "com.example.dompetku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSmbGMGk2PnqW5zq_bcsPzpnsxqMRt-0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

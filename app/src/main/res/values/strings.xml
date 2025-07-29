@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DompetKu</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="register_link">Register here</string>
+    <string name="account">Don\'t have an account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="login_here">Login here</string>
+    <string name="registrasi">Register</string>
+</resources>

@@ -1,0 +1,225 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/cardview_light_background">
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:elevation="4dp"
+            android:translationY="-50dp"
+            android:clipToPadding="false"
+            android:clipToOutline="false"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/layoutStatistik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:layout_margin="16dp"
+                android:layout_marginTop="-50dp"
+                android:clipToPadding="false"
+                android:clipToOutline="false">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Statistik Keuangan"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Baris pertama -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tvSaldo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 0"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/primaryColor" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Saldo Saat Ini"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tvJumlahTransaksi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/primaryColor" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jumlah Transaksi"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Baris kedua -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tvPengeluaran"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 0"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/holo_red_dark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pengeluaran Bulan Ini"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/tvPemasukan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 0"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/holo_green_dark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pemasukan Bulan Ini"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_user"
+                android:contentDescription="Profile Icon" />
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Nama Lengkap"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email@example.com"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etNomorHp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Nomor HP"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etTanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Tanggal Lahir"
+                android:focusable="false" />
+
+            <Button
+                android:id="@+id/btnSimpanProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/primaryColor"
+                android:text="Simpan Perubahan"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:text="Logout"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
