@@ -18,7 +18,7 @@ DompetKu adalah aplikasi Android yang dibuat sebagai **Proyek UAS Pemrograman Mo
 
 ## 🛠 Teknologi yang Digunakan
 
-- **Android Studio** (Kotlin / Java)
+- **Android Studio** (Java)
 - **Firebase Authentication**
 - **Firebase Firestore**
 - **Bottom Navigation View**
